@@ -40,6 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\IYggdrasilAuthenticationProvider.cs" />
+    <Compile Include="Provider\YggdrasilAuthenticatedContext.cs" />
+    <Compile Include="Provider\YggdrasilAuthenticationProvider.cs" />
+    <Compile Include="Provider\YggdrasilReturnEndpointContext.cs" />
+    <Compile Include="YggdrasilAuthenticationExtensions.cs" />
+    <Compile Include="YggdrasilAuthenticationHandler.cs" />
+    <Compile Include="YggdrasilAuthenticationMiddleware.cs" />
+    <Compile Include="YggdrasilAuthenticationOptions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
