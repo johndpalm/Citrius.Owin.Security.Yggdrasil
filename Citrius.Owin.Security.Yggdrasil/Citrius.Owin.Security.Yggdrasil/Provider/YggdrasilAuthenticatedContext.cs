@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Citrius.Owin.Security.Yggdrasil.Provider
 {
-    class YggdrasilAuthenticatedContext
+    public class YggdrasilAuthenticatedContext
     {
     }
 }
