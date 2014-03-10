@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace Citrius.Owin.Security.Yggdrasil.Provider
+namespace Citrius.Owin.Security.Yggdrasil
 {
-    public class IYggdrasilAuthenticationProvider
+    public interface IYggdrasilAuthenticationProvider
     {
+        Task Authenticated(YggdrasilAuthenticatedContext context);
+        Task ReturnEndpoint(YggdrasilReturnEndpointContext context);
     }
 }

@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Owin;
+using Microsoft.Owin.Security;
+using Microsoft.Owin.Security.Provider;
 
-namespace Citrius.Owin.Security.Yggdrasil.Provider
+namespace Citrius.Owin.Security.Yggdrasil
 {
-    public class YggdrasilReturnEndpointContext
+    public class YggdrasilReturnEndpointContext : ReturnEndpointContext
     {
+        public YggdrasilReturnEndpointContext(
+            IOwinContext context,
+            AuthenticationTicket ticket)
+            : base(context, ticket)
+        {
+        }
     }
 }
