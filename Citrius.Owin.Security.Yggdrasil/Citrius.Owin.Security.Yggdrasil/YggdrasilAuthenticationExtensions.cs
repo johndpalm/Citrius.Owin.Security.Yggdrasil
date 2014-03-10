@@ -30,7 +30,6 @@ namespace Owin
                 new YggdrasilAuthenticationOptions
                 {
                     ClientToken = clientToken
-                    //,   ClientSecret = clientSecret
                 });
         }
     }

@@ -14,7 +14,7 @@ namespace Citrius.Owin.Security.Yggdrasil
         {
             Caption = Scheme;
             CallbackPath = "/authenticate";
-            AuthenticationMode = AuthenticationMode.Passive;
+            AuthenticationMode = AuthenticationMode.Active;
             BackchannelTimeout = TimeSpan.FromSeconds(60);
             Scope = new List<string>();
         }
